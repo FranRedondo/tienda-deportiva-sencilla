@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tienda Deportiva Online</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Sportify</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#products">Productos</a></li>
+                <li><a href="#noticias">Noticias</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="cart">
+            <button id="cart-btn">
+                <img src="./cart-icon.png" alt="Carrito de compras">
+                <span id="cart-count">0</span>
+            </button>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>¡Encuentra todo para tu deporte favorito!</h2>
+            <p>Desde equipamiento hasta accesorios, tenemos todo lo que necesitas.</p>
+            <p>¡Tambien contamos con un sector para noticias deportivas!</p>
+            <a href="#products" class="cta-btn">Explora ahora</a>
+        </div>
+    </section>
+
+    <section class="products" id="products">
+        <h2>Productos Destacados</h2>
+        <div class="product-list">
+            <div class="product-card" data-id="1">
+                <img src="./product1.jpg" alt="Producto 1">
+                <h3>Pelota de Fútbol</h3>
+                <p>$29.99</p>
+                <button class="add-to-cart">Añadir al carrito</button>
+            </div>
+            <div class="product-card" data-id="2">
+                <img src="./product2.jpg" alt="Producto 2">
+                <h3>Raqueta de Tenis</h3>
+                <p>$49.99</p>
+                <button class="add-to-cart">Añadir al carrito</button>
+            </div>
+            <div class="product-card" data-id="3">
+                <img src="./product3.jpg" alt="Producto 3">
+                <h3>Botines de Fútbol</h3>
+                <p>$79.99</p>
+                <button class="add-to-cart">Añadir al carrito</button>
+            </div>
+            <div class="product-card" data-id="3">
+                <img src="./product4.jpg" alt="Producto 3">
+                <h3>Paleta de padel</h3>
+                <p>$150.00</p>
+                <button class="add-to-cart">Añadir al carrito</button>
+            </div>
+            <div class="product-card" data-id="3">
+                <img src="./product5.jpg" alt="Producto 3">
+                <h3>Pelota de basquet</h3>
+                <p>$45.00</p>
+                <button class="add-to-cart">Añadir al carrito</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="products" id="noticias">
+        <h2>Noticias Deportivas</h2>
+        <div class="product-list">
+            <div class="product-card" data-id="1">
+                <img src="./futbol.jpg" alt="Producto 1">
+                <h3>FUTBOL</h3>
+                <a href="https://www.ole.com.ar/" button class="add-to-cart">VER</button></a>
+            </div>
+            <div class="product-card" data-id="1">
+                <img src="./tenis.jpg" alt="Producto 1">
+                <h3>TENIS</h3>
+                <a href="https://www.ole.com.ar/tenis" button class="add-to-cart">VER</button></a>
+            </div>
+            <div class="product-card" data-id="1">
+                <img src="./padel.jpg" alt="Producto 1">
+                <h3>PADEL</h3>
+                <a href="https://www.ole.com.ar/padel" button class="add-to-cart">VER</button></a>
+            </div>
+            <div class="product-card" data-id="1">
+                <img src="./basquet.jpg" alt="Producto 1">
+                <h3>BASQUET</h3>
+                <a href="https://www.ole.com.ar/basquet" button class="add-to-cart">VER</button></a>
+            </div>
+            <div class="product-card" data-id="1">
+                <img src="./autos.jpg" alt="Producto 1">
+                <h3>AUTOMOVILISMO</h3>
+                <a href="https://www.ole.com.ar/autos" button class="add-to-cart">VER</button></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="cart-popup" class="cart-popup">
+        <div class="cart-content">
+            <h2>Carrito de Compras</h2>
+            <ul id="cart-items"></ul>
+            <p>Total: $<span id="cart-total">0</span></p>
+            <button id="checkout-btn">Proceder a la compra</button>
+            <button id="close-cart">Cerrar</button>
+        </div>
+    </section>
+
+    <section class="products" id="Contacto">
+        <h2>Contacto</h2>
+        <div>
+            <img src="./instagram.png" alt="">
+            <img src="./facebook.png" alt="">
+            <img src="./gmail.png" alt="">
+            <img src="./whatsapp.png" alt="">
+            <img src="./twitter.png" alt="">
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>2025 Sportify. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
